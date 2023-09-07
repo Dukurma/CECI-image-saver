@@ -23,12 +23,12 @@ The CECI-image-saver Tool is a javascript based  application that allows users t
    ```bash
    git clone https://github.com/Dukurma/CECI-image-saver.git
 
-###  Navigate to the project directory
--cd CECI-image-saver
+### Navigate to the project directory
+- cd CECI-image-saver
 
 ### Usage
 1. Run the application:
-- node main.js
+	- node main.js
 2. Follow the prompts to input the website URL(s) you want to scrape images from.
 3. Apply filters or options as needed.
 4. Download the scraped images to the designated folder.
@@ -46,5 +46,5 @@ Contributions are welcome! If you find a bug or have an idea for an enhancement,
 ### License
 This project is licensed under the Dukurma_grp.
 
-###Acknowledgements
+### Acknowledgements
 This tool was inspired by the need to easily collect images from websites for various purposes.
