@@ -37,7 +37,8 @@ rl.question('Enter the URL of the website you want to scrape images from: ', asy
     // Download and save each image
     for (const [index, imageUrl] of imageLinks.entries()) {
       const imageResponse = await axios.get(imageUrl, { responseType: 'stream' });
-      const imageName = `image_${index + 1}.png`;
+      const imageExtension = path.extname(imageUrl); // Get the file extension from the URL
+      const imageName = `image_${index + 1}${imageExtension}`; // Use the extension in the filename
       const imagePath = path.join(outputDirectory, imageName);
 
       const imageStream = fs.createWriteStream(imagePath);
